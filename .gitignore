@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs/ApiSep
+/ApiSep.Bl/obj
+/ApiSep.Dal/obj/Debug
+/ApiSep.ErrorLogger/bin/Debug
+/ApiSep.ErrorLogger/obj/Debug
+/ApiSep.Exchange/obj/Debug
+/ApiSep.Library/obj/Debug
+/ApiSep.MailHub/obj/Debug
+/Wcf/ApiSep.Wcf/obj
+/Wcf/ApiSep.Wcf/bin

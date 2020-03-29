@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DC9EE50-3C11-45FA-B222-BEEAC853F8BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApiSep.Library</RootNamespace>
+    <AssemblyName>ApiSep.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Serialize.Linq, Version=1.8.1.0, Culture=neutral, PublicKeyToken=25bcc11ba213b377, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serialize.Linq.1.8.1\lib\net45\Serialize.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\DecimalFormatterAttribute.cs" />
+    <Compile Include="Attributes\FriendlyErrorMessageAttribute.cs" />
+    <Compile Include="Attributes\HelpAttribute.cs" />
+    <Compile Include="Attributes\ShortDescriptionAttribute.cs" />
+    <Compile Include="Attributes\XslNameAttribute.cs" />
+    <Compile Include="BaseClasses\ApiBase.cs" />
+    <Compile Include="BaseClasses\MapperBase.cs" />
+    <Compile Include="BaseClasses\RequestBase.cs" />
+    <Compile Include="BaseClasses\ResponseBase.cs" />
+    <Compile Include="Enums\ContactActionEnum.cs" />
+    <Compile Include="Enums\ControlTypeEnum.cs" />
+    <Compile Include="Enums\DateGroupEnum.cs" />
+    <Compile Include="Enums\DocumentExtensionEnum.cs" />
+    <Compile Include="Enums\DocumentFlowEventsEnum.cs" />
+    <Compile Include="Enums\DocumentTypeEnum.cs" />
+    <Compile Include="Enums\ErrorsEnum.cs" />
+    <Compile Include="Enums\HttpVerbEnum.cs" />
+    <Compile Include="Enums\LeadUpdateActionEnum.cs" />
+    <Compile Include="Enums\NotificationTypeEnum.cs" />
+    <Compile Include="Enums\TaskUpdateActionEnum.cs" />
+    <Compile Include="Enums\ToastPositionEnum.cs" />
+    <Compile Include="Enums\ToastTypeEnum.cs" />
+    <Compile Include="Enums\UserRolesEnum.cs" />
+    <Compile Include="Enums\ValidationErrorEnum.cs" />
+    <Compile Include="Enums\WhatsAppMessageTypeEnum.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DecimalExtensions.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\HtmlButtonExtensions.cs" />
+    <Compile Include="Extensions\HtmlGenericControlExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\LambdaEqualityComparer.cs" />
+    <Compile Include="Extensions\LinkButtonExtensions.cs" />
+    <Compile Include="Extensions\LinqExtensions.cs" />
+    <Compile Include="Extensions\PredicateExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Handlers\ErrorHandler.cs" />
+    <Compile Include="Helpers\DirectoryHelper.cs" />
+    <Compile Include="Helpers\ExpressionUtils.cs" />
+    <Compile Include="Helpers\GenericEqualityComparer.cs" />
+    <Compile Include="Helpers\ObjectCopier.cs" />
+    <Compile Include="Helpers\ThemeHelper.cs" />
+    <Compile Include="Interfaces\IMailClient.cs" />
+    <Compile Include="Interfaces\IReceiver.cs" />
+    <Compile Include="Interfaces\ISender.cs" />
+    <Compile Include="Interfaces\ISenderEnvironment.cs" />
+    <Compile Include="Models\dto\UserDto.cs" />
+    <Compile Include="Models\other\AppointmentModel.cs" />
+    <Compile Include="Models\other\DateObject.cs" />
+    <Compile Include="Models\other\SenderEnvironment.cs" />
+    <Compile Include="Models\other\SequentialGuid.cs" />
+    <Compile Include="Models\other\SharedWebException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestObjects\CreateRequest.cs" />
+    <Compile Include="RequestObjects\DeleteRequest.cs" />
+    <Compile Include="RequestObjects\GetAllPagedAndFilteredRequest.cs" />
+    <Compile Include="RequestObjects\GetAllPagedRequest.cs" />
+    <Compile Include="RequestObjects\GetAllRequest.cs" />
+    <Compile Include="RequestObjects\GetByIdRequest.cs" />
+    <Compile Include="RequestObjects\SearchFirstRequest.cs" />
+    <Compile Include="RequestObjects\SearchForRequest.cs" />
+    <Compile Include="RequestObjects\UpdateRequest.cs" />
+    <Compile Include="ResponseObjects\CreateResponse.cs" />
+    <Compile Include="ResponseObjects\DeleteResponse.cs" />
+    <Compile Include="ResponseObjects\GetAllPagedAndFilteredResponse.cs" />
+    <Compile Include="ResponseObjects\GetAllPagedResponse.cs" />
+    <Compile Include="ResponseObjects\GetAllResponse.cs" />
+    <Compile Include="ResponseObjects\GetByIdResponse.cs" />
+    <Compile Include="ResponseObjects\SearchFirstResponse.cs" />
+    <Compile Include="ResponseObjects\SearchForResponse.cs" />
+    <Compile Include="ResponseObjects\UpdateResponse.cs" />
+    <Compile Include="Utilities\AgeUtility.cs" />
+    <Compile Include="Utilities\ChannelFactoryManager.cs" />
+    <Compile Include="Utilities\DataEncryptorUtility.cs" />
+    <Compile Include="Utilities\ElmahLogger.cs" />
+    <Compile Include="Utilities\ExceptionUtility.cs" />
+    <Compile Include="Utilities\HttpUtilities.cs" />
+    <Compile Include="Utilities\IdNumberUtility.cs" />
+    <Compile Include="Utilities\PropertyCopier.cs" />
+    <Compile Include="Utilities\RegexUtility.cs" />
+    <Compile Include="Utilities\SerializableDictionary.cs" />
+    <Compile Include="Utilities\StringEncoder.cs" />
+    <Compile Include="Utilities\WcfProxy.cs" />
+    <Compile Include="Utilities\XmlUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiSep.Dal\ApiSep.Dal.csproj">
+      <Project>{F484AC89-EC6F-4173-84CD-352371CD96AB}</Project>
+      <Name>ApiSep.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
