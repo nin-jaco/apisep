@@ -14,7 +14,6 @@ namespace ApiSep.Library.Utilities
 {
     public static class ExceptionUtility
     {
-        public static EmailUtility EmailUtility { get; set; } = new EmailUtility();
 
         public static void LogExceptionAndNotifyOps(Exception exc,  UserDto user, string requestUrl, [CallerFilePath]string source = "", [CallerMemberName]string method = "")
         {

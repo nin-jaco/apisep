@@ -12,3 +12,8 @@
 /ApiSep.MailHub/obj/Debug
 /Wcf/ApiSep.Wcf/obj
 /Wcf/ApiSep.Wcf/bin
+/ApiSep.Bl/bin/Debug
+/ApiSep.Dal/bin/Debug
+/ApiSep.Exchange/bin/Debug
+/ApiSep.Library/bin/Debug
+/ApiSep.MailHub/bin/Debug

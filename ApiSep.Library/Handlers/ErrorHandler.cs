@@ -1,4 +1,5 @@
 ﻿using System;
+using ApiSep.ErrorLogger.Services.Logging;
 
 namespace ApiSep.Library.Handlers
 {

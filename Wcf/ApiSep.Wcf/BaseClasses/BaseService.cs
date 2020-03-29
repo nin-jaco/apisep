@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ApiSep.Bl.BaseClasses;
 using ApiSep.Library.RequestObjects;
 using ApiSep.Library.ResponseObjects;
 using ApiSep.Wcf.Contracts;

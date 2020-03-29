@@ -66,11 +66,6 @@ namespace ApiSep.Library.BaseClasses
             LocalPassword = sender.LocalPassword;
             UserEmailAddress = sender.UserEmailAddress;
             UserMailPassword = sender.UserMailPassword;
-            IdWorkingAs = sender.IdWorkingAs;
-            WorkingAsUsername = sender.WorkingAsUsername;
-            LocalIdDealer = sender.LocalIdDealer;
-            LocalDealerCode = sender.LocalDealerCode;
-            LocalDealerName = sender.LocalDealerName;
             RequestDateTime = sender.RequestDateTime;
         }
 

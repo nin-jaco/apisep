@@ -20,9 +20,9 @@ namespace ApiSep.Library.Utilities
                     return;
                 signal.Raise(ex);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                ErrorHandler.LogException(ex);
+                ErrorLogger.Services.Logging.LogFactory.Logger().Error(e);
             }
         }
 

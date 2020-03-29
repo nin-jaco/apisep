@@ -9,10 +9,6 @@ namespace ApiSep.Library.Interfaces
         string LocalPassword { get; set; }
         string UserEmailAddress { get; set; }
         string UserMailPassword { get; set; }
-        int? IdWorkingAs { get; set; }
-        string WorkingAsUsername { get; set; }
-        int LocalIdDealer { get; set; }
-        string LocalDealerName { get; set; }
         DateTime RequestDateTime { set; }
 
     }

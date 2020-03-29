@@ -118,6 +118,7 @@
     <Compile Include="Models\dto\UserDto.cs" />
     <Compile Include="Models\other\AppointmentModel.cs" />
     <Compile Include="Models\other\DateObject.cs" />
+    <Compile Include="Models\other\Sender.cs" />
     <Compile Include="Models\other\SenderEnvironment.cs" />
     <Compile Include="Models\other\SequentialGuid.cs" />
     <Compile Include="Models\other\SharedWebException.cs" />
@@ -168,6 +169,10 @@
     <ProjectReference Include="..\ApiSep.Dal\ApiSep.Dal.csproj">
       <Project>{F484AC89-EC6F-4173-84CD-352371CD96AB}</Project>
       <Name>ApiSep.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiSep.ErrorLogger\ApiSep.ErrorLogger.csproj">
+      <Project>{BB400075-DE27-43F9-BC3D-C5BA1D4E52AB}</Project>
+      <Name>ApiSep.ErrorLogger</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
