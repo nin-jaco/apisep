@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GenericCrudService.svc" />
+    <Content Include="UserService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,7 +80,11 @@
       <DependentUpon>GenericCrudService.svc</DependentUpon>
     </Compile>
     <Compile Include="IGenericCrudService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserService.svc.cs">
+      <DependentUpon>UserService.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -98,6 +103,10 @@
     <ProjectReference Include="..\..\ApiSep.Bl\ApiSep.Bl.csproj">
       <Project>{225180A2-ED61-40E9-85C0-4E0B72B46DEB}</Project>
       <Name>ApiSep.Bl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ApiSep.Dal\ApiSep.Dal.csproj">
+      <Project>{F484AC89-EC6F-4173-84CD-352371CD96AB}</Project>
+      <Name>ApiSep.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\ApiSep.ErrorLogger\ApiSep.ErrorLogger.csproj">
       <Project>{BB400075-DE27-43F9-BC3D-C5BA1D4E52AB}</Project>

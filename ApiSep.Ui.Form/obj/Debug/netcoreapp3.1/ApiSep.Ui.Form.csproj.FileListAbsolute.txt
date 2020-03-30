@@ -1,0 +1,10 @@
+C:\Source\ApiSep\ApiSep.Ui.Form\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Source\ApiSep\ApiSep.Ui.Form\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Source\ApiSep\ApiSep.Ui.Form\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Source\ApiSep\ApiSep.Ui.Form\bin\Debug\netcoreapp3.1\ApiSep.Ui.Form.exe
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\ApiSep.Ui.Form.csprojAssemblyReference.cache
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\staticwebassets\ApiSep.Ui.Form.StaticWebAssets.Manifest.cache
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\staticwebassets\ApiSep.Ui.Form.StaticWebAssets.xml
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\ApiSep.Ui.Form.AssemblyInfoInputs.cache
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\ApiSep.Ui.Form.AssemblyInfo.cs
+C:\Source\ApiSep\ApiSep.Ui.Form\obj\Debug\netcoreapp3.1\ApiSep.Ui.Form.RazorTargetAssemblyInfo.cache

@@ -10,7 +10,7 @@ namespace ApiSep.Wcf
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
-    public class GenericCrudService<TDto, TEntity> : IGenericCrudService<TDto, TEntity> where TDto : class, new() where TEntity : EntityType, new()
+    public class GenericCrudService<TDto, TEntity> : IGenericCrudService<TDto, TEntity> where TDto : class, new() where TEntity : class, new()
     {
         public LogicBase<TDto, TEntity> LogicBase { get; set; } = new LogicBase<TDto, TEntity>();
 
