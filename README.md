@@ -7,5 +7,6 @@ There are a lot of files.  This is just to showcase a number of features that i 
 3. Dashboards were provided by SSRS Mobile reports  
 4. Because of the repetative nature of most of the objects, i created a generic crud wcf service with generic logic layer that does exception logging and conversion from dataobjects to entity and vise-versa.  Any special functions were extended onto seperate logic files.
 5. We did not have access to production servers, and this was a multi-tenanted infrastructure (load balanced) and needed exception logging and be able to monitor server health in order to provide support.  NLog and elmah and asp.net server health monitoring was enabled and deployed as a separate api. 
-6. There were a lot of XSL template merges for various legal documentation, such as contracts and quotes.
+6. There were a lot of XSL template merges for various legal documentation, such as contracts and quotes through iText.
 7. This solution catered for electronic signatures and ID, license card and vehicle disk verification.
+8.  I made use of attribute usage on enums quite extensively.
