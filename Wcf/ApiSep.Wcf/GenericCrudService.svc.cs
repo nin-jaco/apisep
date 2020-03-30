@@ -10,9 +10,9 @@ namespace ApiSep.Wcf
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
-    public class GenericCrudService<TDto, TEntity> : IGenericCrudService<TDto, TEntity> where TDto : class, new() where TEntity : class, new()
+    public class GenericCrudService<TDto, TModel> : IGenericCrudService<TDto, TModel> where TDto : class, new() where TModel : class, new()
     {
-        public LogicBase<TDto, TEntity> LogicBase { get; set; } = new LogicBase<TDto, TEntity>();
+        public LogicBase<TDto, TModel> LogicBase { get; set; } = new LogicBase<TDto, TModel>();
 
         public CreateResponse<TDto> Create(CreateRequest<TDto> request)
         {
@@ -39,12 +39,12 @@ namespace ApiSep.Wcf
             return LogicBase.GetById(request);
         }
 
-        public SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TEntity> request)
+        public SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TDto> request)
         {
             return LogicBase.SearchFirst(request);
         }
 
-        public SearchForResponse<TDto> SearchFor(SearchForRequest<TEntity> request)
+        public SearchForResponse<TDto> SearchFor(SearchForRequest<TDto> request)
         {
             return LogicBase.SearchFor(request);
         }

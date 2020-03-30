@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="4.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiSep.Dal\ApiSep.Dal.csproj" />
+    <ProjectReference Include="..\ApiSep.Library\ApiSep.Library.csproj" />
   </ItemGroup>
 
 

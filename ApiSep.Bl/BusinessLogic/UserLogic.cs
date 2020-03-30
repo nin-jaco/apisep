@@ -7,7 +7,5 @@ namespace ApiSep.Bl.BusinessLogic
     public class UserLogic : LogicBase<UserDto, User>
     {
         
-
-        
     }
 }

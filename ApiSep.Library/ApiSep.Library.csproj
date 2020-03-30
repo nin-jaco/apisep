@@ -124,6 +124,7 @@
     <Compile Include="Models\other\SharedWebException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestObjects\CreateRequest.cs" />
+    <Compile Include="RequestObjects\CrudRequest.cs" />
     <Compile Include="RequestObjects\DeleteRequest.cs" />
     <Compile Include="RequestObjects\GetAllPagedAndFilteredRequest.cs" />
     <Compile Include="RequestObjects\GetAllPagedRequest.cs" />

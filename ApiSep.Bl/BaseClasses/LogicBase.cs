@@ -233,7 +233,7 @@ namespace ApiSep.Bl.BaseClasses
             }
         }
 
-        public virtual SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TEntity> request)
+        public virtual SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TDto> request)
         {
             var response = new SearchFirstResponse<TDto> { IsSuccess = false, Item = null };
             try
@@ -277,7 +277,7 @@ namespace ApiSep.Bl.BaseClasses
             }
         }
 
-        public virtual SearchForResponse<TDto> SearchFor(SearchForRequest<TEntity> request)
+        public virtual SearchForResponse<TDto> SearchFor(SearchForRequest<TDto> request)
         {
             var response = new SearchForResponse<TDto> { IsSuccess = false, ItemList = null };
             try

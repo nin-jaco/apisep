@@ -17,9 +17,9 @@ namespace ApiSep.Bl.Interfaces
 
         GetByIdResponse<TDto> GetById(GetByIdRequest<TDto> request);
 
-        SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TEntity> request);
+        SearchFirstResponse<TDto> SearchFirst(SearchFirstRequest<TDto> request);
 
-        SearchForResponse<TDto> SearchFor(SearchForRequest<TEntity> request);
+        SearchForResponse<TDto> SearchFor(SearchForRequest<TDto> request);
 
         TEntity MapToModel(TDto dto, RequestBase requestBase);
         TDto MapToDto(TEntity model, RequestBase requestBase);

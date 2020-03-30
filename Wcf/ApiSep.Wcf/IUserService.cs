@@ -5,12 +5,13 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using ApiSep.Dal.Entities;
+using ApiSep.Library.Models.dto;
 using ApiSep.Library.ResponseObjects;
 
 namespace ApiSep.Wcf
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IUserService" in both code and config file together.
-    [ServiceContract]
+    [ServiceContract(Namespace = "ApiSep.Wcf", Name = "UserService", SessionMode = SessionMode.NotAllowed)]
+    [ServiceKnownType(typeof(UserDto))]
     public interface IUserService
     {
         [OperationContract]

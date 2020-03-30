@@ -6,22 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">
-        <Rows>
-            <telerik:LayoutRow>
-                <Columns>
-                    <telerik:LayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
-                        <h1>H1 title, font size 36px. Duis nibh dolor, rhoncus in euismod at, feugiat id magna.</h1>
-                        <h2>H2 Title, font size 30 px.</h2>
-                        <telerik:RadButton runat="server" ID="RadButton0" Text="Button" ButtonType="SkinnedButton"></telerik:RadButton>
-                    </telerik:LayoutColumn>
-                    <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
-                        <img src="images/Thumbnails/Desert.jpg" />
-                    </telerik:LayoutColumn>
-                </Columns>
-            </telerik:LayoutRow>
-        </Rows>
-    </telerik:RadPageLayout>
+   
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
@@ -39,27 +24,30 @@
                 InsertItemPageIndexAction="ShowItemOnFirstPage">
                 <CommandItemSettings ShowExportToCsvButton="true" ShowExportToExcelButton="true" ShowExportToPdfButton="true" ShowExportToWordButton="true" />
                 <Columns>
-                    <telerik:GridBoundColumn DataField="Name" HeaderText="Name" SortExpression="Name"
-                        UniqueName="Name">
+                    <telerik:GridBoundColumn DataField="Id" HeaderText="Id" SortExpression="Id"
+                        UniqueName="Id">
                         <HeaderStyle Width="150px" />
                     </telerik:GridBoundColumn>
-                    <telerik:GridNumericColumn DataField="Age" HeaderText="Age" SortExpression="Age"
-                        UniqueName="Age">
+                    <telerik:GridNumericColumn DataField="Username" HeaderText="Username" SortExpression="Username"
+                        UniqueName="Username">
                         <HeaderStyle Width="150px" />
                     </telerik:GridNumericColumn>
-                    <telerik:GridDateTimeColumn DataField="BirthDate" HeaderText="BirthDate" SortExpression="BirthDate"
-                        UniqueName="BirthDate" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
+                    <telerik:GridNumericColumn DataField="Firstname" HeaderText="Firstname" SortExpression="Firstname"
+                                               UniqueName="Firstname">
+                        <HeaderStyle Width="150px" />
+                    </telerik:GridNumericColumn>
+                    <telerik:GridNumericColumn DataField="Firstname" HeaderText="Firstname" SortExpression="Firstname"
+                                               UniqueName="Firstname">
+                        <HeaderStyle Width="150px" />
+                    </telerik:GridNumericColumn>
+                    <telerik:GridDateTimeColumn DataField="DateOfBirth" HeaderText="DateOfBirth" SortExpression="DateOfBirth"
+                        UniqueName="DateOfBirth" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
                         <HeaderStyle Width="150px" />
                     </telerik:GridDateTimeColumn>
-                    <telerik:GridRatingColumn DataField="Rating" HeaderText="Rating" SortExpression="Rating"
-                        UniqueName="Rating" GroupByExpression="Rating Group By Rating">
+                    <telerik:GridDateTimeColumn DataField="DateCreated" HeaderText="DateCreated" SortExpression="DateCreated"
+                                                UniqueName="DateCreated" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
                         <HeaderStyle Width="150px" />
-                    </telerik:GridRatingColumn>
-                    <telerik:GridDropDownColumn DataField="City" HeaderText="City" SortExpression="City"
-                        ListDataMember="City" ListTextField="City"
-                        UniqueName="City" DropDownControlType="RadComboBox">
-                        <HeaderStyle Width="150px" />
-                    </telerik:GridDropDownColumn>
+                    </telerik:GridDateTimeColumn>
                     <telerik:GridEditCommandColumn UniqueName="EditColumn" HeaderText="Edit Command Column">
                         <HeaderStyle Width="70px" />
                     </telerik:GridEditCommandColumn>

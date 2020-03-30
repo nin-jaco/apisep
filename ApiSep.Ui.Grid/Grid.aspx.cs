@@ -72,7 +72,16 @@ namespace ApiSep.Ui.Grid
         }
         protected void RadGrid1_NeedDataSource(object sender, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
         {
-            RadGrid1.DataSource = GetAll();
+            try
+            {
+                RadGrid1.DataSource = GetAll();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw;
+            }
+            
         }
 
         protected void RadGrid1_UpdateCommand(object sender, Telerik.Web.UI.GridCommandEventArgs e)

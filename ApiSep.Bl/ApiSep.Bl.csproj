@@ -86,6 +86,7 @@
     <Compile Include="BaseClasses\LogicBase.cs" />
     <Compile Include="BaseClasses\Repository.cs" />
     <Compile Include="BusinessLogic\UserLogic.cs" />
+    <Compile Include="Interfaces\ICrud.cs" />
     <Compile Include="Interfaces\IlogicBase.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
