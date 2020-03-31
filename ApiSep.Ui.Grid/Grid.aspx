@@ -20,7 +20,7 @@
             <ExportSettings ExportOnlyData="true" IgnorePaging="true"></ExportSettings>
             <MasterTableView AutoGenerateColumns="False"
                 AllowFilteringByColumn="true" TableLayout="Fixed"
-                DataKeyNames="ID" CommandItemDisplay="Top"
+                DataKeyNames="Id" CommandItemDisplay="Top"
                 InsertItemPageIndexAction="ShowItemOnFirstPage">
                 <CommandItemSettings ShowExportToCsvButton="true" ShowExportToExcelButton="true" ShowExportToPdfButton="true" ShowExportToWordButton="true" />
                 <Columns>
@@ -36,8 +36,8 @@
                                                UniqueName="Firstname">
                         <HeaderStyle Width="150px" />
                     </telerik:GridNumericColumn>
-                    <telerik:GridNumericColumn DataField="Firstname" HeaderText="Firstname" SortExpression="Firstname"
-                                               UniqueName="Firstname">
+                    <telerik:GridNumericColumn DataField="Lastname" HeaderText="Lastname" SortExpression="Lastname"
+                                               UniqueName="Lastname">
                         <HeaderStyle Width="150px" />
                     </telerik:GridNumericColumn>
                     <telerik:GridDateTimeColumn DataField="DateOfBirth" HeaderText="DateOfBirth" SortExpression="DateOfBirth"

@@ -40,6 +40,7 @@ namespace ApiSep.RabbitRx
                 using (var context = new ApiSepEntities())
                 {
                     context.Users.Add(userDto.ToModel());
+                    context.SaveChanges();
                 }
                 Console.WriteLine(" User received: " + message);
                 rabbitMqChannel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);

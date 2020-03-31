@@ -12,6 +12,7 @@ using AuditEvent = ApiSep.Dal.Entities.AuditEvent;
 
 namespace ApiSep.DAL
 {
+    ///this has been hidden for simplicity but is the overload of the context class to build the audit message 
     /*public partial class ApiSepEntities : AuditDbContext
     {
 

@@ -109,6 +109,7 @@
     <Content Include="Scripts\20200324_AddDefaultSchemaVersions.sql" />
     <Content Include="Scripts\20200324_aspnet_Webevent.Events.sql" />
     <Content Include="Scripts\20200324_CreateTableSchemaVersions.sql" />
+    <Content Include="Scripts\20200324_CreateUsersTable.sql" />
     <Content Include="Scripts\20200324_ElmagLogError.sql" />
     <Content Include="Scripts\20200324_ElmahGetErrorXml.sql" />
     <Content Include="Scripts\20200324_ElmahTable.sql" />
