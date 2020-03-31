@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApiSep.Dal.Entities;
 using ApiSep.DAL.Interfaces;
 using Audit.EntityFramework;
 
@@ -17,13 +18,20 @@ namespace ApiSep.DAL
             DbSet = DbContext.Set<T>();
         }
 
-        public Context(AuditDbContext db)
+        //public Context(AuditDbContext db)
+        //{
+        //    DbContext = db;
+        //    DbSet = DbContext.Set<T>();
+        //}
+
+        public Context(ApiSepEntities db)
         {
             DbContext = db;
             DbSet = DbContext.Set<T>();
         }
 
-        public AuditDbContext DbContext { get; set; }
+        //public AuditDbContext DbContext { get; set; }
+        public ApiSepEntities DbContext { get; set; }
 
         public IDbSet<T> DbSet { get; set; }
 

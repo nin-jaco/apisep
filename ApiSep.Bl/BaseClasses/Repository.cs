@@ -82,16 +82,17 @@ namespace ApiSep.Bl.BaseClasses
         {
             try
             {
-                Context.DbContext.AddAuditCustomField("IdChangedBy", request.LocalIdUser);
-                Context.DbContext.AddAuditCustomField("Username", request.LocalUsername);
-                Context.DbContext.AddAuditCustomField("IdDealer", request.LocalIdDealer);
-                Context.DbContext.AddAuditCustomField("DealerName", request.LocalDealerName);
-                Context.DbContext.AddAuditCustomField("IpAddress", request.Ip);
-                Context.DbContext.AddAuditCustomField("UserAgent", request.UserAgent);
-                Context.DbContext.AddAuditCustomField("Browser", request.Browser);
-                Context.DbContext.AddAuditCustomField("BrowserVersion", request.BrowserVersion);
-                Context.DbContext.AddAuditCustomField("IdWorkingAs", request.IdWorkingAs);
-                Context.DbContext.AddAuditCustomField("WorkingAsUsername", request.WorkingAsUsername);
+                //this is for entity audit
+                //Context.DbContext.AddAuditCustomField("IdChangedBy", request.LocalIdUser);
+                //Context.DbContext.AddAuditCustomField("Username", request.LocalUsername);
+                //Context.DbContext.AddAuditCustomField("IdDealer", request.LocalIdDealer);
+                //Context.DbContext.AddAuditCustomField("DealerName", request.LocalDealerName);
+                //Context.DbContext.AddAuditCustomField("IpAddress", request.Ip);
+                //Context.DbContext.AddAuditCustomField("UserAgent", request.UserAgent);
+                //Context.DbContext.AddAuditCustomField("Browser", request.Browser);
+                //Context.DbContext.AddAuditCustomField("BrowserVersion", request.BrowserVersion);
+                //Context.DbContext.AddAuditCustomField("IdWorkingAs", request.IdWorkingAs);
+                //Context.DbContext.AddAuditCustomField("WorkingAsUsername", request.WorkingAsUsername);
 
                 Context.DbContext.SaveChanges();
             }

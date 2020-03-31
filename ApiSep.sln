@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiSep.Ui.Form", "ApiSep.Ui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiSep.Ui.Grid", "ApiSep.Ui.Grid\ApiSep.Ui.Grid.csproj", "{34FE9255-4756-4AC1-8E76-2072375CD3BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiSep.RabbitRx", "ApiSep.RabbitRx\ApiSep.RabbitRx.csproj", "{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,14 @@ Global
 		{34FE9255-4756-4AC1-8E76-2072375CD3BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{34FE9255-4756-4AC1-8E76-2072375CD3BA}.Release|x64.ActiveCfg = Release|Any CPU
 		{34FE9255-4756-4AC1-8E76-2072375CD3BA}.Release|x64.Build.0 = Release|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Debug|x64.Build.0 = Debug|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Release|x64.ActiveCfg = Release|Any CPU
+		{8594DA74-81EF-4014-A46C-4BB6DD3D2BDD}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

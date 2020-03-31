@@ -12,7 +12,7 @@ using AuditEvent = ApiSep.Dal.Entities.AuditEvent;
 
 namespace ApiSep.DAL
 {
-    public partial class ApiSepEntities : AuditDbContext
+    /*public partial class ApiSepEntities : AuditDbContext
     {
 
         public override void OnScopeCreated(AuditScope auditScope)
@@ -80,5 +80,5 @@ namespace ApiSep.DAL
                 //ErrorHandler.LogException(ex);
             }
         }
-    }
+    }*/
 }
