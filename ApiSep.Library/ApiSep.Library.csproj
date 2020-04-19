@@ -69,10 +69,6 @@
     <Compile Include="Attributes\HelpAttribute.cs" />
     <Compile Include="Attributes\ShortDescriptionAttribute.cs" />
     <Compile Include="Attributes\XslNameAttribute.cs" />
-    <Compile Include="BaseClasses\ApiBase.cs" />
-    <Compile Include="BaseClasses\MapperBase.cs" />
-    <Compile Include="BaseClasses\RequestBase.cs" />
-    <Compile Include="BaseClasses\ResponseBase.cs" />
     <Compile Include="Enums\ContactActionEnum.cs" />
     <Compile Include="Enums\ControlTypeEnum.cs" />
     <Compile Include="Enums\DateGroupEnum.cs" />
@@ -95,7 +91,6 @@
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="Extensions\ExceptionExtensions.cs" />
-    <Compile Include="Extensions\HtmlButtonExtensions.cs" />
     <Compile Include="Extensions\HtmlGenericControlExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="Extensions\LambdaEqualityComparer.cs" />
@@ -122,38 +117,14 @@
     <Compile Include="Models\other\SequentialGuid.cs" />
     <Compile Include="Models\other\SharedWebException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestObjects\CreateRequest.cs" />
-    <Compile Include="RequestObjects\CrudRequest.cs" />
-    <Compile Include="RequestObjects\DeleteRequest.cs" />
-    <Compile Include="RequestObjects\GetAllPagedAndFilteredRequest.cs" />
-    <Compile Include="RequestObjects\GetAllPagedRequest.cs" />
-    <Compile Include="RequestObjects\GetAllRequest.cs" />
-    <Compile Include="RequestObjects\GetByIdRequest.cs" />
-    <Compile Include="RequestObjects\SearchFirstRequest.cs" />
-    <Compile Include="RequestObjects\SearchForRequest.cs" />
-    <Compile Include="RequestObjects\UpdateRequest.cs" />
-    <Compile Include="ResponseObjects\CreateResponse.cs" />
-    <Compile Include="ResponseObjects\DeleteResponse.cs" />
-    <Compile Include="ResponseObjects\GetAllPagedAndFilteredResponse.cs" />
-    <Compile Include="ResponseObjects\GetAllPagedResponse.cs" />
-    <Compile Include="ResponseObjects\GetAllResponse.cs" />
-    <Compile Include="ResponseObjects\GetByIdResponse.cs" />
-    <Compile Include="ResponseObjects\SearchFirstResponse.cs" />
-    <Compile Include="ResponseObjects\SearchForResponse.cs" />
-    <Compile Include="ResponseObjects\UpdateResponse.cs" />
-    <Compile Include="Utilities\AgeUtility.cs" />
     <Compile Include="Utilities\ChannelFactoryManager.cs" />
-    <Compile Include="Utilities\DataEncryptorUtility.cs" />
-    <Compile Include="Utilities\ElmahLogger.cs" />
     <Compile Include="Utilities\ExceptionUtility.cs" />
     <Compile Include="Utilities\HttpUtilities.cs" />
     <Compile Include="Utilities\IdNumberUtility.cs" />
     <Compile Include="Utilities\PropertyCopier.cs" />
     <Compile Include="Utilities\RegexUtility.cs" />
-    <Compile Include="Utilities\SerializableDictionary.cs" />
     <Compile Include="Utilities\StringEncoder.cs" />
     <Compile Include="Utilities\WcfProxy.cs" />
-    <Compile Include="Utilities\XmlUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

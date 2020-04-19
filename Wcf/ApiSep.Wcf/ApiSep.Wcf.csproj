@@ -97,10 +97,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ApiSep.Bl\ApiSep.Bl.csproj">
-      <Project>{225180A2-ED61-40E9-85C0-4E0B72B46DEB}</Project>
-      <Name>ApiSep.Bl</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\ApiSep.Dal\ApiSep.Dal.csproj">
       <Project>{F484AC89-EC6F-4173-84CD-352371CD96AB}</Project>
       <Name>ApiSep.Dal</Name>
