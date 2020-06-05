@@ -6,9 +6,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI.WebControls;
 using ApiSep.Dal.Entities;
-using ApiSep.Library.Handlers;
 using ApiSep.Library.Models.dto;
-using ApiSep.Library.RequestObjects;
 using ApiSep.Library.Utilities;
 using ApiSep.Wcf;
 using Telerik.Web.UI;
@@ -27,7 +25,6 @@ namespace ApiSep.Ui.Grid
             }
             catch (Exception e)
             {
-                ErrorHandler.LogException(e);
                 return null;
             }
         }

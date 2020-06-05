@@ -6,7 +6,6 @@ using System.ServiceModel;
 using System.Text;
 using ApiSep.Dal.Entities;
 using ApiSep.Library.Models.dto;
-using ApiSep.Library.ResponseObjects;
 
 namespace ApiSep.Wcf
 {
