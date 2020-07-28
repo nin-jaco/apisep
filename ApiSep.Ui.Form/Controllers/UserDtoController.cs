@@ -2,7 +2,8 @@
 using System.Linq;
 using System.Text;
 using System.Text.Json;
-using ApiSep.Dal.Entities;
+using ApiSep.Dal;
+using ApiSep.DAL.Interfaces;
 using ApiSep.Library.Models.dto;
 using Microsoft.AspNetCore.Mvc;
 using RabbitMQ.Client;
@@ -13,14 +14,14 @@ namespace ApiSep.Ui.Form.Controllers
     [ApiController]
     public class UserDtoController : ControllerBase
     {
-        private ApiSepEntities ApiSepContext { get; } = new ApiSepEntities();
+        private IApiSepContext _apiSepContext = new ApiSepContext();
 
         // GET: api/UserDto
         [HttpGet]
         public IEnumerable<UserDto> Get()
         {
             var list = new List<UserDto>();
-            var results = ApiSepContext.Users.ToList();
+            var results = _apiSepContext.Users.ToList();
             if (results.Any())
             {
                 foreach (var result in results)
@@ -36,7 +37,7 @@ namespace ApiSep.Ui.Form.Controllers
         [HttpGet("{id}", Name = "Get")]
         public ActionResult<UserDto> Get(int id)
         {
-            var result = ApiSepContext.Users.FirstOrDefault(p => p.Id == id);
+            var result = _apiSepContext.Users.FirstOrDefault(p => p.Id == id);
             return result != null ? UserDto.FromModel(result) : null;
         }
 
@@ -70,14 +71,14 @@ namespace ApiSep.Ui.Form.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] UserDto UserDto)
         {
-            var result = ApiSepContext.Users.FirstOrDefault(p => p.Id == id);
+            var result = _apiSepContext.Users.FirstOrDefault(p => p.Id == id);
             if (result != null)
             {
                 result.Username = UserDto.Username;
                 result.Firstname = UserDto.Firstname;
                 result.Lastname = UserDto.Lastname;
                 result.DateOfBirth = UserDto.DateOfBirth;
-                ApiSepContext.SaveChanges();
+                _apiSepContext.SaveChanges();
             }
         }
 
@@ -85,9 +86,9 @@ namespace ApiSep.Ui.Form.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var result = ApiSepContext.Users.FirstOrDefault(p => p.Id == id);
-            if (result != null) ApiSepContext.Users.Remove(result);
-            ApiSepContext.SaveChanges();
+            var result = _apiSepContext.Users.FirstOrDefault(p => p.Id == id);
+            if (result != null) _apiSepContext.Users.Remove(result);
+            _apiSepContext.SaveChanges();
         }
     }
 }

@@ -2,7 +2,8 @@
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
-using ApiSep.Dal.Entities;
+using ApiSep.Dal;
+using ApiSep.DAL.Interfaces;
 
 namespace ApiSep.Wcf
 {
@@ -10,11 +11,11 @@ namespace ApiSep.Wcf
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class UserService : IUserService
     {
-        private ApiSepEntities Context { get; } = new ApiSepEntities();
+        private IApiSepContext _context = new ApiSepContext();
 
         public List<User> GetAll()
         {
-            return Context.Users.ToList();
+            return _context.Users.ToList();
         }
 
 

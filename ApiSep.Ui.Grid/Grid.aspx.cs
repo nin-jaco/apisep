@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using System.Web;
-using System.Web.Security;
-using System.Web.UI.WebControls;
-using ApiSep.Dal.Entities;
-using ApiSep.Library.Models.dto;
+using ApiSep.Dal;
 using ApiSep.Library.Utilities;
 using ApiSep.Wcf;
 using Telerik.Web.UI;

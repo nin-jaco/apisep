@@ -33,12 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Audit.EntityFramework, Version=15.0.5.0, Culture=neutral, PublicKeyToken=571d6b80b242c87e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Audit.EntityFramework.15.0.5\lib\net45\Audit.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Audit.NET, Version=15.0.5.0, Culture=neutral, PublicKeyToken=571d6b80b242c87e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Audit.NET.15.0.5\lib\net45\Audit.NET.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -63,64 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiSepEntities.cs" />
-    <Compile Include="Context.cs" />
-    <Compile Include="Entities\ApiSepModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ApiSepModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\ApiSepModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ApiSepModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\ApiSepModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ApiSepModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\AuditEvent.cs">
-      <DependentUpon>ApiSepModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\CustomAuditEvent.cs">
-      <DependentUpon>ApiSepModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EntityAuditEvent.cs">
-      <DependentUpon>ApiSepModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\User.cs">
-      <DependentUpon>ApiSepModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaces\IContext.cs" />
+    <Compile Include="ApiSepContext.cs" />
+    <Compile Include="Interfaces\IApiSepContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entities\ApiSepModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ApiSepModel.edmx</DependentUpon>
-      <LastGenOutput>ApiSepModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Entities\ApiSepModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ApiSepModel.edmx</DependentUpon>
-      <LastGenOutput>ApiSepModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\20200324_CreateUsersTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Entities\ApiSepModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ApiSepModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Entities\ApiSepModel.edmx.diagram">
-      <DependentUpon>ApiSepModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

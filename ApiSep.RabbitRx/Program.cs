@@ -2,8 +2,7 @@
 using System.Text;
 using System.Text.Json;
 using System.Threading;
-using ApiSep.Dal.Entities;
-using ApiSep.DAL;
+using ApiSep.Dal;
 using ApiSep.Library.Models.dto;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -37,7 +36,7 @@ namespace ApiSep.RabbitRx
                 var body = ea.Body;
                 var message = Encoding.UTF8.GetString(body);
                 var userDto = JsonSerializer.Deserialize<UserDto>(message);
-                using (var context = new ApiSepEntities())
+                using (var context = new ApiSepContext())
                 {
                     context.Users.Add(userDto.ToModel());
                     context.SaveChanges();

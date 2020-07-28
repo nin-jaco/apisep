@@ -1,6 +1,5 @@
 using System.Runtime.Serialization;
-using ApiSep.Dal.Entities;
-using ApiSep.DAL;
+using ApiSep.Dal;
 using Newtonsoft.Json;
 
 namespace ApiSep.Library.Models.dto
